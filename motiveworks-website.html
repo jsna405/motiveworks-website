@@ -1,983 +1,964 @@
-{\rtf1\ansi\ansicpg949\cocoartf2865
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red23\green24\blue24;\red140\green211\blue254;
-\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red109\green115\blue120;\red212\green212\blue212;
-\red113\green192\blue131;\red54\green192\blue160;\red167\green197\blue152;\red183\green111\blue247;}
-{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c11765\c12157\c12549;\cssrgb\c61176\c86275\c99608;
-\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c50196\c52549\c54510;\cssrgb\c86275\c86275\c86275;
-\cssrgb\c50588\c78824\c58431;\cssrgb\c23922\c78824\c69020;\cssrgb\c70980\c80784\c65882;\cssrgb\c77255\c54118\c97647;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotiveWorks | We Craft Your Motive</title>
+    
+    <!-- Fonts: Added Syne 600, 700, 800 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Syne:wght@600;700;800&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
 
-\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 html\cf5 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf7 \strokec7 "ko"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf7 \strokec7 "UTF-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "viewport"\cf5 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf7 \strokec7 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \strokec5 MotiveWorks | We Craft Your Motive\cf6 \strokec6 </\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cb1 \
-\cb3     \cf8 \strokec8 <!-- Fonts: Added Syne 600, 700, 800 -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.gstatic.com"\cf5 \strokec5  \cf4 \strokec4 crossorigin\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Syne:wght@600;700;800&family=Playfair+Display:ital,wght@1,400;1,600&display=swap"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf8 \strokec8 <!-- React & ReactDOM -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://unpkg.com/react@18/umd/react.production.min.js"\cf5 \strokec5  \cf4 \strokec4 crossorigin\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"\cf5 \strokec5  \cf4 \strokec4 crossorigin\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cb1 \
-\cb3     \cf8 \strokec8 <!-- Babel -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://unpkg.com/@babel/standalone/babel.min.js"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf8 \strokec8 <!-- Tailwind CSS -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cb1 \
-\cb3     \cf8 \strokec8 <!-- Framer Motion -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         tailwind\cf9 \strokec9 .\cf5 \strokec5 config \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             theme\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3                 extend\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3                     colors\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3                         black\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '#000000'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
-\cb3                         dark\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '#0a0a0a'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
-\cb3                         section\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '#111111'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
-\cb3                         neon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '#00ff41'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
-\cb3                         gray\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3                             \cf11 \strokec11 DEFAULT\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '#888888'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
-\cb3                             dark\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '#444444'\cf5 \cb1 \strokec5 \
-\cb3                         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
-\cb3                     fontFamily\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3                         syne\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'Syne'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'sans-serif'\cf9 \strokec9 ],\cf5 \cb1 \strokec5 \
-\cb3                         unbounded\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'Syne'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'sans-serif'\cf9 \strokec9 ],\cf5 \cb1 \strokec5 \
-\cb3                         serif\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'Playfair Display'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'serif'\cf9 \strokec9 ],\cf5 \cb1 \strokec5 \
-\cb3                         sans\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'Syne'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'Noto Sans KR'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'sans-serif'\cf9 \strokec9 ],\cf5 \cb1 \strokec5 \
-\cb3                     \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
-\cb3                     cursor\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3                         none\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'none'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
-\cb3                     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3                 \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cb1 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 body\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  #000000\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  #ffffff\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 overflow-x:\cf5 \strokec5  \cf7 \strokec7 hidden\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 font-family:\cf5 \strokec5  \cf10 \strokec10 'Syne'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'Noto Sans KR'\cf9 \strokec9 ,\cf5 \strokec5  \cf7 \strokec7 sans-serif\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf12 \strokec12 600\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 html\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 scroll-behavior:\cf5 \strokec5  \cf7 \strokec7 smooth\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf2 \strokec2 ::selection\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  #00ff41\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  #000000\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf2 \strokec2 ::-webkit-scrollbar\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 width:\cf5 \strokec5  \cf12 \strokec12 6px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 ::-webkit-scrollbar-track\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background:\cf5 \strokec5  #000000\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 ::-webkit-scrollbar-thumb\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background:\cf5 \strokec5  #333\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 ::-webkit-scrollbar-thumb:hover\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background:\cf5 \strokec5  #00ff41\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf8 \strokec8 /* Blur Reveal Effect Class */\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .blur-reveal\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 animation:\cf5 \strokec5  \cf7 \strokec7 blurIn\cf5 \strokec5  \cf12 \strokec12 1.5s\cf5 \strokec5  \cf7 \strokec7 cubic-bezier(\cf12 \strokec12 0.25\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 1\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0.5\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 1\cf7 \strokec7 )\cf5 \strokec5  \cf7 \strokec7 forwards\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf13 \strokec13 @keyframes\cf5 \strokec5  \cf7 \strokec7 blurIn\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 0%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3                 \cf4 \strokec4 opacity:\cf5 \strokec5  \cf12 \strokec12 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3                 \cf4 \strokec4 filter:\cf5 \strokec5  \cf7 \strokec7 blur(\cf12 \strokec12 20px\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3                 \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translateY(\cf12 \strokec12 20px\cf7 \strokec7 )\cf5 \strokec5  \cf7 \strokec7 scale(\cf12 \strokec12 1.1\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 100%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3                 \cf4 \strokec4 opacity:\cf5 \strokec5  \cf12 \strokec12 1\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3                 \cf4 \strokec4 filter:\cf5 \strokec5  \cf7 \strokec7 blur(\cf12 \strokec12 0px\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3                 \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translateY(\cf12 \strokec12 0\cf7 \strokec7 )\cf5 \strokec5  \cf7 \strokec7 scale(\cf12 \strokec12 1\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .text-stroke-neon\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 -webkit-text-stroke:\cf5 \strokec5  \cf12 \strokec12 0px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 transparent\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-clip:\cf5 \strokec5  \cf7 \strokec7 text\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-image:\cf5 \strokec5  \cf7 \strokec7 linear-gradient(to\cf5 \strokec5  \cf7 \strokec7 bottom\cf9 \strokec9 ,\cf5 \strokec5  #ffffff\cf9 \strokec9 ,\cf5 \strokec5  #00ff41\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 -webkit-background-clip:\cf5 \strokec5  \cf7 \strokec7 text\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 opacity:\cf5 \strokec5  \cf12 \strokec12 0.2\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf8 \strokec8 /* Glitch Effect CSS */\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .glitch-wrapper\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 relative\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 inline-block\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .glitch\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 relative\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .glitch::before\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .glitch::after\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 content:\cf5 \strokec5  \cf7 \strokec7 attr(data-text)\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 absolute\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 top:\cf5 \strokec5  \cf12 \strokec12 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 left:\cf5 \strokec5  \cf12 \strokec12 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 width:\cf5 \strokec5  \cf12 \strokec12 100%\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 height:\cf5 \strokec5  \cf12 \strokec12 100%\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background:\cf5 \strokec5  #000\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .glitch::before\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 left:\cf5 \strokec5  \cf12 \strokec12 2px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 text-shadow:\cf5 \strokec5  \cf12 \strokec12 -2px\cf5 \strokec5  \cf12 \strokec12 0\cf5 \strokec5  #ff00c1\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 44px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 450px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 56px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 animation:\cf5 \strokec5  \cf7 \strokec7 glitch-anim\cf5 \strokec5  \cf12 \strokec12 5s\cf5 \strokec5  \cf7 \strokec7 infinite\cf5 \strokec5  \cf7 \strokec7 linear\cf5 \strokec5  \cf7 \strokec7 alternate-reverse\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .glitch::after\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 left:\cf5 \strokec5  \cf12 \strokec12 -2px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 text-shadow:\cf5 \strokec5  \cf12 \strokec12 -2px\cf5 \strokec5  \cf12 \strokec12 0\cf5 \strokec5  #00fff9\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 44px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 450px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 56px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 animation:\cf5 \strokec5  \cf7 \strokec7 glitch-anim2\cf5 \strokec5  \cf12 \strokec12 5s\cf5 \strokec5  \cf7 \strokec7 infinite\cf5 \strokec5  \cf7 \strokec7 linear\cf5 \strokec5  \cf7 \strokec7 alternate-reverse\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf13 \strokec13 @keyframes\cf5 \strokec5  \cf7 \strokec7 glitch-anim\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 0%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 12px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 22px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 5%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 54px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 86px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 10%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 12px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 85px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 15%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 42px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 52px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 20%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 6px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 16px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 25%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 89px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 95px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 30%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 2px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 12px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 35%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 22px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 66px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 40%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 1px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 99px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 45%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 33px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 44px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 50%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 11px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 22px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 100%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 66px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 77px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf13 \strokec13 @keyframes\cf5 \strokec5  \cf7 \strokec7 glitch-anim2\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 0%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 22px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 11px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 5%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 66px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 88px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 10%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 11px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 66px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 15%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 33px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 99px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 20%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 1px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 44px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 25%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 55px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 33px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 30%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 2px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 22px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 35%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 88px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 66px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 40%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 44px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 33px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 45%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 77px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 11px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 50%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 33px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 55px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 100%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 clip:\cf5 \strokec5  \cf7 \strokec7 rect(\cf12 \strokec12 11px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 9999px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 22px\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -0.3deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf8 \strokec8 /* Snap Animation for Main Title Appearance */\cf5 \cb1 \strokec5 \
-\cb3         \cf13 \strokec13 @keyframes\cf5 \strokec5  \cf7 \strokec7 snap-in\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 0%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf12 \strokec12 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf12 \strokec12 1.1\cf7 \strokec7 )\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 10deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 filter:\cf5 \strokec5  \cf7 \strokec7 blur(\cf12 \strokec12 10px\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 50%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf12 \strokec12 1\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf12 \strokec12 0.95\cf7 \strokec7 )\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 -5deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 filter:\cf5 \strokec5  \cf7 \strokec7 blur(\cf12 \strokec12 0px\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 70%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf12 \strokec12 1.02\cf7 \strokec7 )\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 2deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf12 \strokec12 100%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf12 \strokec12 1\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf12 \strokec12 1\cf7 \strokec7 )\cf5 \strokec5  \cf7 \strokec7 skew(\cf12 \strokec12 0deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .snap-reveal\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 animation:\cf5 \strokec5  \cf7 \strokec7 snap-in\cf5 \strokec5  \cf12 \strokec12 0.6s\cf5 \strokec5  \cf7 \strokec7 cubic-bezier(\cf12 \strokec12 0.22\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 1\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 0.36\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 1\cf7 \strokec7 )\cf5 \strokec5  \cf7 \strokec7 forwards\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "root"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "text/babel"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         const \{ useState, useEffect, useRef \} = React;\cb1 \
-\cb3         const \{ motion, useScroll, useTransform, useSpring, useMotionValue, useMotionTemplate, AnimatePresence \} = window.Motion;\cb1 \
-\
-\cb3         // --- Custom Cursor ---\cb1 \
-\cb3         const CustomCursor = () => \{\cb1 \
-\cb3             const [mousePosition, setMousePosition] = useState(\{ x: 0, y: 0 \});\cb1 \
-\cb3             const [isHovering, setIsHovering] = useState(false);\cb1 \
-\
-\cb3             useEffect(() => \{\cb1 \
-\cb3                 const updateMousePosition = (e) => \{\cb1 \
-\cb3                     setMousePosition(\{ x: e.clientX, y: e.clientY \});\cb1 \
-\cb3                 \};\cb1 \
-\
-\cb3                 const handleMouseOver = (e) => \{\cb1 \
-\cb3                     if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('a') || e.target.closest('button') || e.target.closest('.group') || e.target.closest('.cursor-pointer')) \{\cb1 \
-\cb3                         setIsHovering(true);\cb1 \
-\cb3                     \} else \{\cb1 \
-\cb3                         setIsHovering(false);\cb1 \
-\cb3                     \}\cb1 \
-\cb3                 \};\cb1 \
-\
-\cb3                 window.addEventListener('mousemove', updateMousePosition);\cb1 \
-\cb3                 window.addEventListener('mouseover', handleMouseOver);\cb1 \
-\
-\cb3                 return () => \{\cb1 \
-\cb3                     window.removeEventListener('mousemove', updateMousePosition);\cb1 \
-\cb3                     window.removeEventListener('mouseover', handleMouseOver);\cb1 \
-\cb3                 \};\cb1 \
-\cb3             \}, []);\cb1 \
-\
-\cb3             return (\cb1 \
-\cb3                 <motion.div\cb1 \
-\cb3                     className="fixed top-0 left-0 z-[100] pointer-events-none mix-blend-difference hidden md:block" // Hidden on mobile for performance & usability\cb1 \
-\cb3                     animate=\{\{\cb1 \
-\cb3                         x: mousePosition.x - (isHovering ? 20 : 10),\cb1 \
-\cb3                         y: mousePosition.y - (isHovering ? 20 : 10),\cb1 \
-\cb3                         scale: isHovering ? 1.5 : 1,\cb1 \
-\cb3                     \}\}\cb1 \
-\cb3                     transition=\{\{ type: "spring", stiffness: 500, damping: 28 \}\}\cb1 \
-\cb3                 >\cb1 \
-\cb3                     <div \cb1 \
-\cb3                         className=\{`rounded-full border-2 border-neon $\{isHovering ? 'bg-neon/20' : 'bg-transparent'\}`\}\cb1 \
-\cb3                         style=\{\{ width: isHovering ? 40 : 20, height: isHovering ? 40 : 20 \}\}\cb1 \
-\cb3                     />\cb1 \
-\cb3                 </motion.div>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         // --- Components ---\cb1 \
-\
-\cb3         const RevealText = (\{ children, className, delay = 0 \}) => \{\cb1 \
-\cb3             return (\cb1 \
-\cb3                 <div className="overflow-hidden w-full">\cb1 \
-\cb3                     <motion.div\cb1 \
-\cb3                         initial=\{\{ y: "100%" \}\}\cb1 \
-\cb3                         whileInView=\{\{ y: 0 \}\}\cb1 \
-\cb3                         transition=\{\{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay \}\}\cb1 \
-\cb3                         viewport=\{\{ once: true \}\}\cb1 \
-\cb3                         className=\{className\}\cb1 \
-\cb3                     >\cb1 \
-\cb3                         \{children\}\cb1 \
-\cb3                     </motion.div>\cb1 \
-\cb3                 </div>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         // Cinematic Text Reveal Component\cb1 \
-\cb3         const CinematicText = (\{ text, className, delay = 0 \}) => \{\cb1 \
-\cb3             const words = text.split(" ");\cb1 \
-\cb3             \cb1 \
-\cb3             const container = \{\cb1 \
-\cb3                 hidden: \{ opacity: 0 \},\cb1 \
-\cb3                 visible: \{\cb1 \
-\cb3                     opacity: 1,\cb1 \
-\cb3                     transition: \{ staggerChildren: 0.08, delayChildren: delay \}\cb1 \
-\cb3                 \}\cb1 \
-\cb3             \};\cb1 \
-\
-\cb3             const child = \{\cb1 \
-\cb3                 hidden: \{\cb1 \
-\cb3                     opacity: 0,\cb1 \
-\cb3                     y: 20,\cb1 \
-\cb3                     filter: "blur(10px)",\cb1 \
-\cb3                 \},\cb1 \
-\cb3                 visible: \{\cb1 \
-\cb3                     opacity: 1,\cb1 \
-\cb3                     y: 0,\cb1 \
-\cb3                     filter: "blur(0px)",\cb1 \
-\cb3                     transition: \{\cb1 \
-\cb3                         type: "spring",\cb1 \
-\cb3                         damping: 20,\cb1 \
-\cb3                         stiffness: 100\cb1 \
-\cb3                     \}\cb1 \
-\cb3                 \}\cb1 \
-\cb3             \};\cb1 \
-\
-\cb3             return (\cb1 \
-\cb3                 <motion.div \cb1 \
-\cb3                     className=\{`flex flex-wrap justify-center $\{className\}`\}\cb1 \
-\cb3                     variants=\{container\}\cb1 \
-\cb3                     initial="hidden"\cb1 \
-\cb3                     animate="visible"\cb1 \
-\cb3                 >\cb1 \
-\cb3                     \{words.map((word, index) => (\cb1 \
-\cb3                         <motion.span \cb1 \
-\cb3                             key=\{index\} \cb1 \
-\cb3                             variants=\{child\}\cb1 \
-\cb3                             className="mr-[0.3em] last:mr-0 inline-block"\cb1 \
-\cb3                         >\cb1 \
-\cb3                             \{word\}\cb1 \
-\cb3                         </motion.span>\cb1 \
-\cb3                     ))\}\cb1 \
-\cb3                 </motion.div>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         // Glitch Text Component\cb1 \
-\cb3         const GlitchText = (\{ text, className, delay = 0 \}) => \{\cb1 \
-\cb3             const [show, setShow] = useState(false);\cb1 \
-\
-\cb3             useEffect(() => \{\cb1 \
-\cb3                 const timer = setTimeout(() => \{\cb1 \
-\cb3                     setShow(true);\cb1 \
-\cb3                 \}, delay * 1000);\cb1 \
-\cb3                 return () => clearTimeout(timer);\cb1 \
-\cb3             \}, [delay]);\cb1 \
-\
-\cb3             if (!show) return <div className=\{`$\{className\} opacity-0`\}>\{text\}</div>;\cb1 \
-\
-\cb3             return (\cb1 \
-\cb3                 <div className=\{`$\{className\} snap-reveal`\}>\cb1 \
-\cb3                     <div className="glitch-wrapper">\cb1 \
-\cb3                         <h1 className="glitch" data-text=\{text\}>\cb1 \
-\cb3                             \{text\}\cb1 \
-\cb3                         </h1>\cb1 \
-\cb3                     </div>\cb1 \
-\cb3                 </div>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         // Ambient Dust Background\cb1 \
-\cb3         const AmbientDust = () => \{\cb1 \
-\cb3             const canvasRef = useRef(null);\cb1 \
-\cb3             const mouseRef = useRef(\{ x: null, y: null, radius: 150 \});\cb1 \
-\
-\cb3             useEffect(() => \{\cb1 \
-\cb3                 const canvas = canvasRef.current;\cb1 \
-\cb3                 const ctx = canvas.getContext('2d');\cb1 \
-\cb3                 let width = window.innerWidth;\cb1 \
-\cb3                 let height = window.innerHeight;\cb1 \
-\cb3                 let particles = [];\cb1 \
-\cb3                 let animationFrameId;\cb1 \
-\
-\cb3                 const handleMouseMove = (e) => \{\cb1 \
-\cb3                     mouseRef.current.x = e.clientX;\cb1 \
-\cb3                     mouseRef.current.y = e.clientY;\cb1 \
-\cb3                 \};\cb1 \
-\
-\cb3                 const init = () => \{\cb1 \
-\cb3                     width = window.innerWidth;\cb1 \
-\cb3                     height = window.innerHeight;\cb1 \
-\cb3                     canvas.width = width;\cb1 \
-\cb3                     canvas.height = height;\cb1 \
-\cb3                     particles = [];\cb1 \
-\cb3                     \cb1 \
-\cb3                     const particleCount = width < 768 ? 60 : 180; \cb1 \
-\cb3                     for (let i = 0; i < particleCount; i++) \{\cb1 \
-\cb3                         particles.push(\{\cb1 \
-\cb3                             x: Math.random() * width,\cb1 \
-\cb3                             y: Math.random() * height,\cb1 \
-\cb3                             size: Math.random() * 2.5 + 0.5, \cb1 \
-\cb3                             speedY: Math.random() * 0.4 + 0.1, \cb1 \
-\cb3                             speedX: (Math.random() - 0.5) * 0.5, \cb1 \
-\cb3                             density: (Math.random() * 20) + 1, \cb1 \
-\cb3                             opacity: Math.random() * 0.5 + 0.1,\cb1 \
-\cb3                             baseOpacity: Math.random() * 0.5 + 0.1,\cb1 \
-\cb3                             angle: Math.random() * Math.PI * 2,\cb1 \
-\cb3                             velocity: Math.random() * 0.02 + 0.01 \cb1 \
-\cb3                         \});\cb1 \
-\cb3                     \}\cb1 \
-\cb3                 \};\cb1 \
-\
-\cb3                 const draw = () => \{\cb1 \
-\cb3                     ctx.clearRect(0, 0, width, height);\cb1 \
-\cb3                     \cb1 \
-\cb3                     particles.forEach(p => \{\cb1 \
-\cb3                         p.angle += p.velocity;\cb1 \
-\cb3                         const sway = Math.sin(p.angle) * 0.3;\cb1 \
-\cb3                         const twinkle = Math.sin(p.angle * 2) * 0.1; \cb1 \
-\cb3                         \cb1 \
-\cb3                         if (mouseRef.current.x != null) \{\cb1 \
-\cb3                             let dx = mouseRef.current.x - p.x;\cb1 \
-\cb3                             let dy = mouseRef.current.y - p.y;\cb1 \
-\cb3                             let distance = Math.sqrt(dx * dx + dy * dy);\cb1 \
-\cb3                             \cb1 \
-\cb3                             if (distance < mouseRef.current.radius) \{\cb1 \
-\cb3                                 const forceDirectionX = dx / distance;\cb1 \
-\cb3                                 const forceDirectionY = dy / distance;\cb1 \
-\cb3                                 const force = (mouseRef.current.radius - distance) / mouseRef.current.radius;\cb1 \
-\cb3                                 const directionX = forceDirectionX * force * p.density * 0.6; \cb1 \
-\cb3                                 const directionY = forceDirectionY * force * p.density * 0.6;\cb1 \
-\
-\cb3                                 p.x -= directionX;\cb1 \
-\cb3                                 p.y -= directionY;\cb1 \
-\cb3                             \}\cb1 \
-\cb3                         \}\cb1 \
-\
-\cb3                         p.y -= p.speedY;\cb1 \
-\cb3                         p.x += p.speedX + sway;\cb1 \
-\
-\cb3                         ctx.fillStyle = `rgba(255, 255, 255, $\{Math.max(0, Math.min(0.8, p.baseOpacity + twinkle))\})`;\cb1 \
-\cb3                         ctx.beginPath();\cb1 \
-\cb3                         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);\cb1 \
-\cb3                         ctx.fill();\cb1 \
-\
-\cb3                         if (p.y < -10) \{\cb1 \
-\cb3                             p.y = height + 10;\cb1 \
-\cb3                             p.x = Math.random() * width;\cb1 \
-\cb3                         \}\cb1 \
-\cb3                         if (p.x < -10) p.x = width + 10;\cb1 \
-\cb3                         if (p.x > width + 10) p.x = -10;\cb1 \
-\cb3                     \});\cb1 \
-\
-\cb3                     animationFrameId = requestAnimationFrame(draw);\cb1 \
-\cb3                 \};\cb1 \
-\
-\cb3                 init();\cb1 \
-\cb3                 draw();\cb1 \
-\cb3                 window.addEventListener('resize', init);\cb1 \
-\cb3                 window.addEventListener('mousemove', handleMouseMove);\cb1 \
-\
-\cb3                 return () => \{\cb1 \
-\cb3                     window.removeEventListener('resize', init);\cb1 \
-\cb3                     window.removeEventListener('mousemove', handleMouseMove);\cb1 \
-\cb3                     cancelAnimationFrame(animationFrameId);\cb1 \
-\cb3                 \};\cb1 \
-\cb3             \}, []);\cb1 \
-\
-\cb3             return (\cb1 \
-\cb3                 <canvas \cb1 \
-\cb3                     ref=\{canvasRef\} \cb1 \
-\cb3                     className="absolute inset-0 z-0 mix-blend-screen pointer-events-none"\cb1 \
-\cb3                     style=\{\{ opacity: 0.8 \}\} \cb1 \
-\cb3                 />\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         // Refined Digital Wave Background (Increased Visibility)\cb1 \
-\cb3         const DigitalWave = () => \{\cb1 \
-\cb3             const canvasRef = useRef(null);\cb1 \
-\
-\cb3             useEffect(() => \{\cb1 \
-\cb3                 const canvas = canvasRef.current;\cb1 \
-\cb3                 const ctx = canvas.getContext('2d');\cb1 \
-\cb3                 let width = window.innerWidth;\cb1 \
-\cb3                 let height = window.innerHeight;\cb1 \
-\cb3                 let animationFrameId;\cb1 \
-\cb3                 let time = 0;\cb1 \
-\
-\cb3                 const resize = () => \{\cb1 \
-\cb3                     width = window.innerWidth;\cb1 \
-\cb3                     height = window.innerHeight;\cb1 \
-\cb3                     canvas.width = width;\cb1 \
-\cb3                     canvas.height = height;\cb1 \
-\cb3                 \};\cb1 \
-\
-\cb3                 const draw = () => \{\cb1 \
-\cb3                     ctx.clearRect(0, 0, width, height);\cb1 \
-\cb3                     time += 0.008;\cb1 \
-\
-\cb3                     // Increased opacity and brightness for better visibility\cb1 \
-\cb3                     const waves = [\cb1 \
-\cb3                         \{ amplitude: 80, frequency: 0.002, speed: 0.03, offset: 0, color: 'rgba(0, 255, 65, 0.3)' \}, // Brighter Neon\cb1 \
-\cb3                         \{ amplitude: 50, frequency: 0.004, speed: 0.02, offset: 100, color: 'rgba(0, 255, 65, 0.15)' \},\cb1 \
-\cb3                         \{ amplitude: 100, frequency: 0.001, speed: 0.01, offset: -50, color: 'rgba(255, 255, 255, 0.1)' \}\cb1 \
-\cb3                     ];\cb1 \
-\
-\cb3                     waves.forEach((wave, index) => \{\cb1 \
-\cb3                         ctx.beginPath();\cb1 \
-\cb3                         ctx.strokeStyle = wave.color;\cb1 \
-\cb3                         ctx.lineWidth = 1.5;\cb1 \
-\
-\cb3                         for (let x = 0; x <= width; x += 5) \{\cb1 \
-\cb3                             const y = height / 2 + \cb1 \
-\cb3                                       Math.sin(x * wave.frequency + time * wave.speed + wave.offset) * wave.amplitude +\cb1 \
-\cb3                                       Math.sin(x * 0.01 + time) * 20; \cb1 \
-\
-\cb3                             if (x === 0) ctx.moveTo(x, y);\cb1 \
-\cb3                             else ctx.lineTo(x, y);\cb1 \
-\cb3                         \}\cb1 \
-\cb3                         ctx.stroke();\cb1 \
-\cb3                     \});\cb1 \
-\cb3                     \cb1 \
-\cb3                     animationFrameId = requestAnimationFrame(draw);\cb1 \
-\cb3                 \};\cb1 \
-\
-\cb3                 window.addEventListener('resize', resize);\cb1 \
-\cb3                 resize();\cb1 \
-\cb3                 draw();\cb1 \
-\
-\cb3                 return () => \{\cb1 \
-\cb3                     window.removeEventListener('resize', resize);\cb1 \
-\cb3                     cancelAnimationFrame(animationFrameId);\cb1 \
-\cb3                 \};\cb1 \
-\cb3             \}, []);\cb1 \
-\
-\cb3             return (\cb1 \
-\cb3                 <canvas \cb1 \
-\cb3                     ref=\{canvasRef\} \cb1 \
-\cb3                     className="absolute inset-0 w-full h-full pointer-events-none mix-blend-screen z-0"\cb1 \
-\cb3                 />\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         const Navbar = () => \{\cb1 \
-\cb3             return (\cb1 \
-\cb3                 <nav className="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center mix-blend-difference">\cb1 \
-\cb3                     <motion.div \cb1 \
-\cb3                         initial=\{\{ opacity: 0, y: -20 \}\}\cb1 \
-\cb3                         animate=\{\{ opacity: 1, y: 0 \}\}\cb1 \
-\cb3                         transition=\{\{ duration: 0.8 \}\}\cb1 \
-\cb3                     >\cb1 \
-\cb3                         <a href="#" className="font-syne font-extrabold text-xl md:text-2xl tracking-tight text-white hover:text-neon transition-colors duration-300 whitespace-nowrap">\cb1 \
-\cb3                             MotiveWorks\cb1 \
-\cb3                         </a>\cb1 \
-\cb3                     </motion.div>\cb1 \
-\cb3                     <motion.div \cb1 \
-\cb3                         initial=\{\{ opacity: 0, y: -20 \}\}\cb1 \
-\cb3                         animate=\{\{ opacity: 1, y: 0 \}\}\cb1 \
-\cb3                         transition=\{\{ duration: 0.8, delay: 0.1 \}\}\cb1 \
-\cb3                         className="hidden md:flex gap-8 font-syne text-xs uppercase tracking-widest font-medium"\cb1 \
-\cb3                     >\cb1 \
-\cb3                         \{['Philosophy', 'Process', 'Contact'].map((item) => (\cb1 \
-\cb3                             <a key=\{item\} href=\{`#$\{item.toLowerCase()\}`\} className="text-white hover:text-neon transition-colors duration-300 relative group">\cb1 \
-\cb3                                 \{item\}\cb1 \
-\cb3                                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-neon transition-all duration-300 group-hover:w-full"></span>\cb1 \
-\cb3                             </a>\cb1 \
-\cb3                         ))\}\cb1 \
-\cb3                     </motion.div>\cb1 \
-\cb3                 </nav>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         const Hero = () => \{\cb1 \
-\cb3             const \{ scrollY \} = useScroll();\cb1 \
-\cb3             const indicatorOpacity = useTransform(scrollY, [0, 50], [1, 0]);\cb1 \
-\
-\cb3             return (\cb1 \
-\cb3                 <section className="h-screen w-full flex flex-col justify-center items-center relative px-4 md:px-12 overflow-hidden">\cb1 \
-\cb3                     <div className="absolute inset-0 bg-radial-gradient from-transparent to-black opacity-80 pointer-events-none"></div>\cb1 \
-\
-\cb3                     <div className="flex flex-col items-center text-center z-10 max-w-6xl relative">\cb1 \
-\cb3                         \{/* Subtitle: Cinematic Reveal */\}\cb1 \
-\cb3                         <div className="mb-6 md:mb-8 h-8 md:h-12 flex items-center justify-center">\cb1 \
-\cb3                             <CinematicText \cb1 \
-\cb3                                 text="We don't make mediocre merch."\cb1 \
-\cb3                                 className="font-syne font-bold text-[4vw] md:text-[2vw] leading-none tracking-tighter text-gray-400 mix-blend-screen uppercase"\cb1 \
-\cb3                                 delay=\{0.5\}\cb1 \
-\cb3                             />\cb1 \
-\cb3                         </div>\cb1 \
-\cb3                         \cb1 \
-\cb3                         \{/* Main Title: Glitch Snap Effect */\}\cb1 \
-\cb3                         <div className="relative flex flex-col items-center w-full">\cb1 \
-\cb3                             \{/* Reduced font size for mobile (9vw -> 8vw) to eliminate truncation */\}\cb1 \
-\cb3                             <GlitchText \cb1 \
-\cb3                                 text="WE CRAFT"\cb1 \
-\cb3                                 className="font-syne font-extrabold text-[8vw] md:text-[7.5vw] leading-[0.85] tracking-tighter text-white mix-blend-screen whitespace-nowrap"\cb1 \
-\cb3                                 delay=\{1.5\}\cb1 \
-\cb3                             />\cb1 \
-\cb3                             <GlitchText \cb1 \
-\cb3                                 text="YOUR MOTIVE"\cb1 \
-\cb3                                 className="font-syne font-extrabold text-[8vw] md:text-[7.5vw] leading-[0.85] tracking-tighter text-white mix-blend-screen whitespace-nowrap"\cb1 \
-\cb3                                 delay=\{1.7\}\cb1 \
-\cb3                             />\cb1 \
-\cb3                             \{/* Optional Glow */\}\cb1 \
-\cb3                             <div className="absolute inset-0 bg-neon/20 blur-[100px] -z-10 opacity-40"></div>\cb1 \
-\cb3                         </div>\cb1 \
-\cb3                     </div>\cb1 \
-\cb3                     \cb1 \
-\cb3                     <motion.div \cb1 \
-\cb3                         animate=\{\{ opacity: [0.05, 0.12, 0.05] \}\}\cb1 \
-\cb3                         transition=\{\{ duration: 6, repeat: Infinity, ease: "easeInOut" \}\}\cb1 \
-\cb3                         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] bg-neon/10 blur-[100px] rounded-full pointer-events-none"\cb1 \
-\cb3                     ></motion.div>\cb1 \
-\
-\cb3                     \{/* NEW: Mobile-only Scroll Indicator with Scroll Fade-Out */\}\cb1 \
-\cb3                     <motion.div \cb1 \
-\cb3                         style=\{\{ opacity: indicatorOpacity \}\}\cb1 \
-\cb3                         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2 md:hidden pointer-events-none"\cb1 \
-\cb3                     >\cb1 \
-\cb3                         <motion.div\cb1 \
-\cb3                             initial=\{\{ opacity: 0 \}\}\cb1 \
-\cb3                             animate=\{\{ opacity: 1 \}\}\cb1 \
-\cb3                             transition=\{\{ delay: 2.5, duration: 1 \}\}\cb1 \
-\cb3                         >\cb1 \
-\cb3                             <motion.div \cb1 \
-\cb3                                 animate=\{\{ y: [0, 8, 0] \}\}\cb1 \
-\cb3                                 transition=\{\{ duration: 1.5, repeat: Infinity, ease: "easeInOut" \}\}\cb1 \
-\cb3                                 className="text-neon opacity-60"\cb1 \
-\cb3                             >\cb1 \
-\cb3                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth=\{1.5\} stroke="currentColor" className="w-6 h-6">\cb1 \
-\cb3                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />\cb1 \
-\cb3                                 </svg>\cb1 \
-\cb3                             </motion.div>\cb1 \
-\cb3                         </motion.div>\cb1 \
-\cb3                     </motion.div>\cb1 \
-\
-\cb3                     \{/* Smooth Transition Gradient */\}\cb1 \
-\cb3                     <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black/80 z-20 pointer-events-none"></div>\cb1 \
-\cb3                 </section>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         // NEW: "The Dual Realm" Philosophy Section (Redesigned)\cb1 \
-\cb3         const Philosophy = () => \{\cb1 \
-\cb3             return (\cb1 \
-\cb3                 <section id="philosophy" className="flex flex-col relative">\cb1 \
-\cb3                     \cb1 \
-\cb3                     \{/* The Split Container */\}\cb1 \
-\cb3                     <div className="flex flex-col md:flex-row w-full relative">\cb1 \
-\cb3                         \cb1 \
-\cb3                         \{/* Left: The Fading World (Transient) - Mobile Optimized (h-auto + padding) */\}\cb1 \
-\cb3                         <div className="w-full md:w-1/2 min-h-[35vh] md:min-h-[50vh] relative flex items-center justify-center md:justify-end p-6 py-12 md:p-24 border-b md:border-b-0 md:border-r border-white/10 overflow-hidden group">\cb1 \
-\cb3                             \{/* Background overlay for dust visibility */\}\cb1 \
-\cb3                             <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-dark/80 to-black/80 pointer-events-none"></div>\cb1 \
-\cb3                             \cb1 \
-\cb3                             \{/* Noise Texture for Gritty Feel */\}\cb1 \
-\cb3                             <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" \cb1 \
-\cb3                                  style=\{\{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` \}\}>\cb1 \
-\cb3                             </div>\cb1 \
-\cb3                             \cb1 \
-\cb3                             \{/* Text with Fading Effect - Increased Visibility */\}\cb1 \
-\cb3                             <div className="text-center md:text-right opacity-100 group-hover:opacity-50 transition-all duration-700 flex flex-col gap-2 relative z-20">\cb1 \
-\cb3                                 <motion.h3 \cb1 \
-\cb3                                     initial=\{\{ y: 20, opacity: 0 \}\}\cb1 \
-\cb3                                     whileInView=\{\{ y: 0, opacity: 1 \}\}\cb1 \
-\cb3                                     transition=\{\{ duration: 1 \}\}\cb1 \
-\cb3                                     className="font-serif italic text-3xl md:text-5xl lg:text-6xl text-gray-300"\cb1 \
-\cb3                                 >\cb1 \
-\cb3                                     Markets change.\cb1 \
-\cb3                                 </motion.h3>\cb1 \
-\cb3                                 <motion.h3 \cb1 \
-\cb3                                     initial=\{\{ y: 20, opacity: 0 \}\}\cb1 \
-\cb3                                     whileInView=\{\{ y: 0, opacity: 1 \}\}\cb1 \
-\cb3                                     transition=\{\{ duration: 1, delay: 0.2 \}\}\cb1 \
-\cb3                                     className="font-serif italic text-3xl md:text-5xl lg:text-6xl text-gray-400"\cb1 \
-\cb3                                 >\cb1 \
-\cb3                                     Trends fade.\cb1 \
-\cb3                                 </motion.h3>\cb1 \
-\cb3                             </div>\cb1 \
-\cb3                         </div>\cb1 \
-\
-\cb3                         \{/* Mobile Divider Line (Visible only on mobile to maintain symmetry feel) */\}\cb1 \
-\cb3                         <div className="w-full h-[1px] bg-gradient-to-r from-gray-800 via-neon to-gray-800 md:hidden shadow-[0_0_10px_#00ff41]"></div>\cb1 \
-\
-\cb3                         \{/* Right: The Timeless Core (Permanent) - Mobile Optimized (h-auto + padding) */\}\cb1 \
-\cb3                         <div className="w-full md:w-1/2 min-h-[35vh] md:min-h-[50vh] relative flex flex-col items-center md:items-start justify-center md:justify-center p-6 py-12 md:p-24 group overflow-hidden">\cb1 \
-\cb3                             \{/* Background overlay */\}\cb1 \
-\cb3                             <div className="absolute inset-0 bg-black/90 pointer-events-none"></div>\cb1 \
-\
-\cb3                             <div className="text-center md:text-left z-20 relative">\cb1 \
-\cb3                                 <motion.h3 \cb1 \
-\cb3                                     initial=\{\{ y: 20, opacity: 0 \}\}\cb1 \
-\cb3                                     whileInView=\{\{ y: 0, opacity: 1 \}\}\cb1 \
-\cb3                                     transition=\{\{ duration: 1, delay: 0.4 \}\}\cb1 \
-\cb3                                     className="font-syne font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-2 tracking-tight"\cb1 \
-\cb3                                 >\cb1 \
-\cb3                                     BUT YOUR STORY\cb1 \
-\cb3                                 </motion.h3>\cb1 \
-\cb3                                 <motion.h3 \cb1 \
-\cb3                                     initial=\{\{ y: 20, opacity: 0 \}\}\cb1 \
-\cb3                                     whileInView=\{\{ y: 0, opacity: 1 \}\}\cb1 \
-\cb3                                     transition=\{\{ duration: 1, delay: 0.6 \}\}\cb1 \
-\cb3                                     className="font-syne font-bold text-4xl md:text-6xl lg:text-7xl text-neon tracking-tight"\cb1 \
-\cb3                                 >\cb1 \
-\cb3                                     REMAINS.\cb1 \
-\cb3                                 </motion.h3>\cb1 \
-\cb3                             </div>\cb1 \
-\cb3                             \cb1 \
-\cb3                             \{/* Subtle Glow on Right Side */\}\cb1 \
-\cb3                             <div className="absolute inset-0 bg-neon/5 blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-10"></div>\cb1 \
-\cb3                         </div>\cb1 \
-\
-\cb3                         \{/* Center Axis Line (Desktop only) */\}\cb1 \
-\cb3                         <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-[1px] bg-gradient-to-b from-gray-800 via-neon to-gray-800 hidden md:block shadow-[0_0_10px_#00ff41] z-30"></div>\cb1 \
-\cb3                     </div>\cb1 \
-\
-\cb3                     \{/* Bottom: The Synthesis / Conclusion - Removed Mobile Border */\}\cb1 \
-\cb3                     <div className="w-full py-16 md:py-20 px-6 flex justify-center items-center border-t-0 relative z-10">\cb1 \
-\cb3                          <motion.p \cb1 \
-\cb3                             initial=\{\{ opacity: 0, y: 20 \}\}\cb1 \
-\cb3                             whileInView=\{\{ opacity: 1, y: 0 \}\}\cb1 \
-\cb3                             transition=\{\{ duration: 1 \}\}\cb1 \
-\cb3                             className="text-gray-400 font-syne font-medium text-lg md:text-xl text-center max-w-2xl leading-relaxed"\cb1 \
-\cb3                         >\cb1 \
-\cb3                             We discover your core <span className="text-white font-bold">MOTIVE</span>,<br/>\cb1 \
-\cb3                             and transform it into timeless <span className="text-white font-bold">WORKS</span>.\cb1 \
-\cb3                         </motion.p>\cb1 \
-\cb3                     </div>\cb1 \
-\cb3                 </section>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         // Restored Compact Step Component with Border Control\cb1 \
-\cb3         const CompactStep = (\{ number, title, subtitle, desc, isFirst = false \}) => \{\cb1 \
-\cb3             return (\cb1 \
-\cb3                 <motion.div \cb1 \
-\cb3                     initial=\{\{ opacity: 0, y: 20 \}\}\cb1 \
-\cb3                     whileInView=\{\{ opacity: 1, y: 0 \}\}\cb1 \
-\cb3                     viewport=\{\{ margin: "-50px", once: true \}\}\cb1 \
-\cb3                     // Reduced vertical padding from py-8 to py-5 for tighter spacing on mobile\cb1 \
-\cb3                     className=\{`$\{isFirst ? 'border-t-0' : 'border-t border-gray-800'\} hover:border-neon transition-colors duration-300 py-5 md:py-8 px-2 group`\}\cb1 \
-\cb3                 >\cb1 \
-\cb3                     <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-baseline">\cb1 \
-\cb3                         \{/* Col 1: Number */\}\cb1 \
-\cb3                         <div className="md:col-span-1">\cb1 \
-\cb3                             <span className="font-syne font-bold text-lg text-neon/60 group-hover:text-neon transition-colors">\{number\}</span>\cb1 \
-\cb3                         </div>\cb1 \
-\
-\cb3                         \{/* Col 2: Title & Subtitle */\}\cb1 \
-\cb3                         <div className="md:col-span-4">\cb1 \
-\cb3                             <h3 className="font-syne font-bold text-2xl md:text-3xl text-white mb-1 group-hover:translate-x-2 transition-transform duration-300">\{title\}</h3>\cb1 \
-\cb3                             <p className="font-syne font-medium text-neon text-xs tracking-widest uppercase opacity-80">\{subtitle\}</p>\cb1 \
-\cb3                         </div>\cb1 \
-\
-\cb3                         \{/* Col 3: Description */\}\cb1 \
-\cb3                         <div className="md:col-span-7">\cb1 \
-\cb3                             <p className="font-sans text-gray-400 text-sm md:text-base leading-relaxed group-hover:text-gray-300 transition-colors max-w-2xl">\cb1 \
-\cb3                                 \{desc\}\cb1 \
-\cb3                             </p>\cb1 \
-\cb3                         </div>\cb1 \
-\cb3                     </div>\cb1 \
-\cb3                 </motion.div>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         const Process = () => \{\cb1 \
-\cb3             return (\cb1 \
-\cb3                 // Reduced section padding from py-12 to py-8 for mobile\cb1 \
-\cb3                 <section id="process" className="py-8 md:py-32 px-6 md:px-12 relative overflow-hidden">\cb1 \
-\cb3                     <div className="max-w-7xl mx-auto">\cb1 \
-\cb3                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16">\cb1 \
-\cb3                             \{/* Sticky Title Area - Gap further reduced */\}\cb1 \
-\cb3                             <div className="lg:col-span-3 lg:sticky lg:top-32 h-fit mb-2 lg:mb-0">\cb1 \
-\cb3                                 <RevealText className="font-syne font-bold text-neon text-sm tracking-[0.3em] mb-2 uppercase">\cb1 \
-\cb3                                     The Process\cb1 \
-\cb3                                 </RevealText>\cb1 \
-\cb3                                 <h2 className="font-syne font-bold text-5xl md:text-6xl text-white tracking-tight leading-none">\cb1 \
-\cb3                                     HOW WE<br/>IGNITE\cb1 \
-\cb3                                 </h2>\cb1 \
-\cb3                                 \{/* Intro text removed as requested */\}\cb1 \
-\cb3                                 <div className="w-[2px] h-20 bg-neon mt-6 hidden lg:block ml-1 opacity-50"></div>\cb1 \
-\cb3                             </div>\cb1 \
-\
-\cb3                             \{/* Efficient Compact List - Restored Structure, Removed border-b as requested */\}\cb1 \
-\cb3                             <div className="lg:col-span-9 flex flex-col">\cb1 \
-\cb3                                 <CompactStep \cb1 \
-\cb3                                     number="01" \cb1 \
-\cb3                                     title="DISCOVER" \cb1 \
-\cb3                                     subtitle="Narrative Pillars" \cb1 \
-\cb3                                     desc="\uc0\u45817 \u49888 \u51032  \u54028 \u54200 \u54868 \u46108  \u50689 \u44048 \u51012  \u54616 \u45208 \u51032  \u44144 \u45824 \u54620  \u49436 \u49324 \u47196  \u44396 \u51312 \u54868 \u54633 \u45768 \u45796 ."\cb1 \
-\cb3                                     isFirst=\{true\}\cb1 \
-\cb3                                 />\cb1 \
-\cb3                                 <CompactStep \cb1 \
-\cb3                                     number="02" \cb1 \
-\cb3                                     title="DESIGN" \cb1 \
-\cb3                                     subtitle="Visual Identity" \cb1 \
-\cb3                                     desc="\uc0\u45817 \u49888 \u51032  \u47924 \u46300 \u47484  \u44148 \u46300 \u47532 \u45716  \u44284 \u44048 \u54616 \u44256  \u46021 \u52285 \u51201 \u51064  \u48708 \u51452 \u50620 \u51012  \u49444 \u44228 \u54633 \u45768 \u45796 ."\cb1 \
-\cb3                                 />\cb1 \
-\cb3                                 <CompactStep \cb1 \
-\cb3                                     number="03" \cb1 \
-\cb3                                     title="CRAFT" \cb1 \
-\cb3                                     subtitle="Masterpiece Only" \cb1 \
-\cb3                                     desc="\uc0\u47749 \u54408  \u48652 \u47004 \u46300  \u49688 \u51456 \u51032  \u47560 \u44048 \u44284  \u46356 \u53580 \u51068 \u51012  \u44256 \u51665 \u54633 \u45768 \u45796 ."\cb1 \
-\cb3                                 />\cb1 \
-\cb3                                 <CompactStep \cb1 \
-\cb3                                     number="04" \cb1 \
-\cb3                                     title="LAUNCH" \cb1 \
-\cb3                                     subtitle="D2C Ownership" \cb1 \
-\cb3                                     desc="\uc0\u54540 \u47019 \u54268 \u50640  \u51333 \u49549 \u46104 \u51648  \u50506 \u45716  \u45817 \u49888 \u47564 \u51032  \u46021 \u47549  \u49828 \u53664 \u50612 . \u54060 \u46308 \u44284  \u51649 \u51217  \u50672 \u44208 \u46104 \u45716  \u53685 \u47196 \u47484  \u50685 \u45768 \u45796 ."\cb1 \
-\cb3                                 />\cb1 \
-\cb3                                 <CompactStep \cb1 \
-\cb3                                     number="05" \cb1 \
-\cb3                                     title="AMPLIFY" \cb1 \
-\cb3                                     subtitle="Cultural Impact" \cb1 \
-\cb3                                     desc="\uc0\u45800 \u49692  \u54032 \u47588 \u47484  \u45336 \u50612 \u49440  \u47928 \u54868 \u51201  \u54788 \u49345 \u51004 \u47196 . \u45936 \u51060 \u53552  \u44592 \u48152 \u51004 \u47196  \u54060 \u45924 \u51012  \u54869 \u51109 \u54616 \u44256  \u48652 \u47004 \u46300 \u47484  \u53412 \u50881 \u45768 \u45796 ."\cb1 \
-\cb3                                 />\cb1 \
-\cb3                             </div>\cb1 \
-\cb3                         </div>\cb1 \
-\cb3                     </div>\cb1 \
-\cb3                 </section>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         // NEW: Plasma Effect Background for Text Mask\cb1 \
-\cb3         const PlasmaBackground = () => \{\cb1 \
-\cb3             const canvasRef = useRef(null);\cb1 \
-\
-\cb3             useEffect(() => \{\cb1 \
-\cb3                 const canvas = canvasRef.current;\cb1 \
-\cb3                 const ctx = canvas.getContext('2d');\cb1 \
-\cb3                 let width, height;\cb1 \
-\cb3                 let time = 0;\cb1 \
-\
-\cb3                 const resize = () => \{\cb1 \
-\cb3                     if(canvas) \{\cb1 \
-\cb3                         width = canvas.width = canvas.offsetWidth;\cb1 \
-\cb3                         height = canvas.height = canvas.offsetHeight;\cb1 \
-\cb3                     \}\cb1 \
-\cb3                 \};\cb1 \
-\
-\cb3                 const draw = () => \{\cb1 \
-\cb3                     time += 0.01;\cb1 \
-\cb3                     const cx = width / 2;\cb1 \
-\cb3                     const cy = height / 2;\cb1 \
-\cb3                     \cb1 \
-\cb3                     // Create gradients for plasma effect\cb1 \
-\cb3                     const grd1 = ctx.createRadialGradient(cx + Math.sin(time) * width * 0.3, cy + Math.cos(time) * height * 0.3, 0, cx, cy, width * 0.8);\cb1 \
-\cb3                     grd1.addColorStop(0, '#00ff41'); \cb1 \
-\cb3                     grd1.addColorStop(1, 'transparent');\cb1 \
-\
-\cb3                     const grd2 = ctx.createRadialGradient(cx + Math.cos(time * 0.8) * width * 0.4, cy + Math.sin(time * 0.7) * height * 0.4, 0, cx, cy, width * 0.6);\cb1 \
-\cb3                     grd2.addColorStop(0, '#ffffff');\cb1 \
-\cb3                     grd2.addColorStop(1, 'transparent');\cb1 \
-\
-\cb3                     ctx.fillStyle = '#000';\cb1 \
-\cb3                     ctx.fillRect(0, 0, width, height);\cb1 \
-\cb3                     \cb1 \
-\cb3                     ctx.globalCompositeOperation = 'screen';\cb1 \
-\cb3                     ctx.fillStyle = grd1;\cb1 \
-\cb3                     ctx.fillRect(0, 0, width, height);\cb1 \
-\cb3                     ctx.fillStyle = grd2;\cb1 \
-\cb3                     ctx.fillRect(0, 0, width, height);\cb1 \
-\cb3                     ctx.globalCompositeOperation = 'source-over';\cb1 \
-\
-\cb3                     requestAnimationFrame(draw);\cb1 \
-\cb3                 \};\cb1 \
-\
-\cb3                 resize();\cb1 \
-\cb3                 window.addEventListener('resize', resize);\cb1 \
-\cb3                 const animId = requestAnimationFrame(draw);\cb1 \
-\
-\cb3                 return () => \{\cb1 \
-\cb3                     window.removeEventListener('resize', resize);\cb1 \
-\cb3                     cancelAnimationFrame(animId);\cb1 \
-\cb3                 \};\cb1 \
-\cb3             \}, []);\cb1 \
-\
-\cb3             return <canvas ref=\{canvasRef\} className="w-full h-full" />;\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         // NEW: Infinite Marquee Component (Stable)\cb1 \
-\cb3         const InfiniteMarquee = (\{ text \}) => \{\cb1 \
-\cb3             return (\cb1 \
-\cb3                 <div className="relative flex overflow-hidden py-3 bg-neon group cursor-pointer border-y-4 border-black">\cb1 \
-\cb3                     <a href="mailto:hello@motiveworks.kr" className="absolute inset-0 z-20"></a>\cb1 \
-\cb3                     <motion.div\cb1 \
-\cb3                         className="whitespace-nowrap flex gap-12 items-center"\cb1 \
-\cb3                         animate=\{\{ x: ["0%", "-50%"] \}\}\cb1 \
-\cb3                         transition=\{\{ repeat: Infinity, duration: 20, ease: "linear" \}\}\cb1 \
-\cb3                     >\cb1 \
-\cb3                         \{[...Array(10)].map((_, i) => (\cb1 \
-\cb3                             <span key=\{i\} className="font-syne font-extrabold text-2xl md:text-4xl text-black uppercase tracking-tight group-hover:text-white transition-colors duration-300">\cb1 \
-\cb3                                 \{text\}\cb1 \
-\cb3                             </span>\cb1 \
-\cb3                         ))\}\cb1 \
-\cb3                     </motion.div>\cb1 \
-\cb3                 </div>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         const CTA = () => \{\cb1 \
-\cb3             return (\cb1 \
-\cb3                 <section id="contact" className="min-h-[80vh] md:min-h-screen flex flex-col justify-center items-center relative overflow-hidden">\cb1 \
-\cb3                     \{/* Center Content - Grand Finale */\}\cb1 \
-\cb3                     <div className="flex flex-col items-center justify-center px-6 z-10 relative mb-20 w-full">\cb1 \
-\cb3                         <RevealText className="font-syne font-bold text-gray-500 text-lg md:text-2xl tracking-[0.3em] md:tracking-[0.5em] mb-2 text-center w-full">\cb1 \
-\cb3                             READY TO CRAFT YOUR\cb1 \
-\cb3                         </RevealText>\cb1 \
-\cb3                         \cb1 \
-\cb3                         \{/* Massive Interactive Title with Aurora Effect */\}\cb1 \
-\cb3                         <div className="relative group cursor-default text-center w-full">\cb1 \
-\cb3                             \{/* Optimized font size for mobile: 11.5vw (further reduced from 12.5vw to ensure fit) */\}\cb1 \
-\cb3                             <h2 className="font-syne font-extrabold text-[11.5vw] md:text-[12.5vw] leading-[0.85] tracking-tighter aurora-text relative z-10 break-all md:break-normal">\cb1 \
-\cb3                                 MOTIVE?\cb1 \
-\cb3                             </h2>\cb1 \
-\cb3                             \cb1 \
-\cb3                             \{/* Glow Effect */\}\cb1 \
-\cb3                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-neon/20 blur-[120px] rounded-full opacity-30 group-hover:opacity-60 transition-opacity duration-500 pointer-events-none -z-10"></div>\cb1 \
-\cb3                         </div>\cb1 \
-\cb3                         \cb1 \
-\cb3                         <p className="mt-12 font-syne font-medium text-white/40 text-sm md:text-base max-w-md text-center leading-relaxed tracking-wider">\cb1 \
-\cb3                             LET'S BUILD YOUR LEGACY TOGETHER.\cb1 \
-\cb3                         </p>\cb1 \
-\cb3                     </div>\cb1 \
-\
-\cb3                     \{/* Diagonal Marquee Button - Removed hover rotation */\}\cb1 \
-\cb3                     <div className="absolute bottom-20 md:bottom-12 w-[120%] -rotate-3 shadow-[0_0_50px_rgba(0,255,65,0.2)] z-30">\cb1 \
-\cb3                         <InfiniteMarquee text="HELLO@MOTIVEWORKS.KR" />\cb1 \
-\cb3                     </div>\cb1 \
-\cb3                     \cb1 \
-\cb3                     <style>\{`\cb1 \
-\cb3                         .aurora-text \{\cb1 \
-\cb3                             background: linear-gradient(45deg, #00ff41, #ffffff, #00ffff, #00ff41);\cb1 \
-\cb3                             background-size: 300% 300%;\cb1 \
-\cb3                             -webkit-background-clip: text;\cb1 \
-\cb3                             background-clip: text;\cb1 \
-\cb3                             color: transparent;\cb1 \
-\cb3                             animation: aurora 4s ease infinite;\cb1 \
-\cb3                         \}\cb1 \
-\cb3                         \cb1 \
-\cb3                         @keyframes aurora \{\cb1 \
-\cb3                             0% \{ background-position: 0% 50%; \}\cb1 \
-\cb3                             50% \{ background-position: 100% 50%; \}\cb1 \
-\cb3                             100% \{ background-position: 0% 50%; \}\cb1 \
-\cb3                         \}\cb1 \
-\cb3                     `\}</style>\cb1 \
-\cb3                 </section>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         const Footer = () => \{\cb1 \
-\cb3             return (\cb1 \
-\cb3                 <footer className="py-12 px-6 md:px-12 border-t border-gray-900 relative z-20">\cb1 \
-\cb3                     <div className="flex flex-col md:flex-row justify-between items-center gap-6">\cb1 \
-\cb3                         <div className="text-center md:text-left">\cb1 \
-\cb3                             \{/* Logo: Bold 800 (ExtraBold) */\}\cb1 \
-\cb3                             <h2 className="font-syne font-extrabold text-xl text-white mb-1">MotiveWorks</h2>\cb1 \
-\cb3                             <p className="font-sans text-gray-600 text-xs">\'a9 2025 All rights reserved.</p>\cb1 \
-\cb3                         </div>\cb1 \
-\cb3                         \cb1 \
-\cb3                         <div className="flex gap-8 font-syne text-xs font-bold uppercase tracking-widest">\cb1 \
-\cb3                             <a href="https://www.instagram.com/_motiveworks/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">Instagram</a>\cb1 \
-\cb3                         </div>\cb1 \
-\cb3                     </div>\cb1 \
-\cb3                 </footer>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         const App = () => \{\cb1 \
-\cb3             return (\cb1 \
-\cb3                 <div className="bg-black min-h-screen relative">\cb1 \
-\cb3                     <CustomCursor />\cb1 \
-\cb3                     \{/* Global Dust Background - Fixed */\}\cb1 \
-\cb3                     <div className="fixed inset-0 z-0 pointer-events-none">\cb1 \
-\cb3                         <AmbientDust />\cb1 \
-\cb3                     </div>\cb1 \
-\
-\cb3                     <Navbar />\cb1 \
-\cb3                     \cb1 \
-\cb3                     \{/* Content relative z-10 to sit above dust */\}\cb1 \
-\cb3                     <main className="relative z-10">\cb1 \
-\cb3                         <Hero />\cb1 \
-\cb3                         <Philosophy />\cb1 \
-\cb3                         <Process />\cb1 \
-\cb3                         <CTA />\cb1 \
-\cb3                     </main>\cb1 \
-\cb3                     <div className="relative z-10">\cb1 \
-\cb3                         <Footer />\cb1 \
-\cb3                     </div>\cb1 \
-\cb3                 </div>\cb1 \
-\cb3             );\cb1 \
-\cb3         \};\cb1 \
-\
-\cb3         const root = ReactDOM.createRoot(document.getElementById('root'));\cb1 \
-\cb3         root.render(<App />);\cb1 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-}
+    <!-- React & ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Framer Motion -->
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#000000',
+                        dark: '#0a0a0a',
+                        section: '#111111',
+                        neon: '#00ff41',
+                        gray: {
+                            DEFAULT: '#888888',
+                            dark: '#444444'
+                        }
+                    },
+                    fontFamily: {
+                        syne: ['Syne', 'sans-serif'],
+                        unbounded: ['Syne', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Syne', 'Noto Sans KR', 'sans-serif'],
+                    },
+                    cursor: {
+                        none: 'none',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            cursor: none;
+            overflow-x: hidden;
+            font-family: 'Syne', 'Noto Sans KR', sans-serif;
+            font-weight: 600;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::selection {
+            background-color: #00ff41;
+            color: #000000;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00ff41;
+        }
+
+        /* Blur Reveal Effect Class */
+        .blur-reveal {
+            animation: blurIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+
+        @keyframes blurIn {
+            0% {
+                opacity: 0;
+                filter: blur(20px);
+                transform: translateY(20px) scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                filter: blur(0px);
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        .text-stroke-neon {
+            -webkit-text-stroke: 0px;
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(to bottom, #ffffff, #00ff41);
+            -webkit-background-clip: text;
+            opacity: 0.2;
+        }
+
+        /* Glitch Effect CSS */
+        .glitch-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .glitch {
+            position: relative;
+            color: white;
+        }
+        
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+        
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 #ff00c1;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+        
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 #00fff9;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim2 5s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim {
+            0% { clip: rect(12px, 9999px, 22px, 0); transform: skew(0.3deg); }
+            5% { clip: rect(54px, 9999px, 86px, 0); transform: skew(0.3deg); }
+            10% { clip: rect(12px, 9999px, 85px, 0); transform: skew(0.3deg); }
+            15% { clip: rect(42px, 9999px, 52px, 0); transform: skew(0.3deg); }
+            20% { clip: rect(6px, 9999px, 16px, 0); transform: skew(0.3deg); }
+            25% { clip: rect(89px, 9999px, 95px, 0); transform: skew(0.3deg); }
+            30% { clip: rect(2px, 9999px, 12px, 0); transform: skew(0.3deg); }
+            35% { clip: rect(22px, 9999px, 66px, 0); transform: skew(0.3deg); }
+            40% { clip: rect(1px, 9999px, 99px, 0); transform: skew(0.3deg); }
+            45% { clip: rect(33px, 9999px, 44px, 0); transform: skew(0.3deg); }
+            50% { clip: rect(11px, 9999px, 22px, 0); transform: skew(0.3deg); }
+            100% { clip: rect(66px, 9999px, 77px, 0); transform: skew(0.3deg); }
+        }
+
+        @keyframes glitch-anim2 {
+            0% { clip: rect(22px, 9999px, 11px, 0); transform: skew(-0.3deg); }
+            5% { clip: rect(66px, 9999px, 88px, 0); transform: skew(-0.3deg); }
+            10% { clip: rect(11px, 9999px, 66px, 0); transform: skew(-0.3deg); }
+            15% { clip: rect(33px, 9999px, 99px, 0); transform: skew(-0.3deg); }
+            20% { clip: rect(1px, 9999px, 44px, 0); transform: skew(-0.3deg); }
+            25% { clip: rect(55px, 9999px, 33px, 0); transform: skew(-0.3deg); }
+            30% { clip: rect(2px, 9999px, 22px, 0); transform: skew(-0.3deg); }
+            35% { clip: rect(88px, 9999px, 66px, 0); transform: skew(-0.3deg); }
+            40% { clip: rect(44px, 9999px, 33px, 0); transform: skew(-0.3deg); }
+            45% { clip: rect(77px, 9999px, 11px, 0); transform: skew(-0.3deg); }
+            50% { clip: rect(33px, 9999px, 55px, 0); transform: skew(-0.3deg); }
+            100% { clip: rect(11px, 9999px, 22px, 0); transform: skew(-0.3deg); }
+        }
+        
+        /* Snap Animation for Main Title Appearance */
+        @keyframes snap-in {
+            0% { opacity: 0; transform: scale(1.1) skew(10deg); filter: blur(10px); }
+            50% { opacity: 1; transform: scale(0.95) skew(-5deg); filter: blur(0px); }
+            70% { transform: scale(1.02) skew(2deg); }
+            100% { opacity: 1; transform: scale(1) skew(0deg); }
+        }
+        
+        .snap-reveal {
+            animation: snap-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+        const { motion, useScroll, useTransform, useSpring, useMotionValue, useMotionTemplate, AnimatePresence } = window.Motion;
+
+        // --- Custom Cursor ---
+        const CustomCursor = () => {
+            const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+            const [isHovering, setIsHovering] = useState(false);
+
+            useEffect(() => {
+                const updateMousePosition = (e) => {
+                    setMousePosition({ x: e.clientX, y: e.clientY });
+                };
+
+                const handleMouseOver = (e) => {
+                    if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('a') || e.target.closest('button') || e.target.closest('.group') || e.target.closest('.cursor-pointer')) {
+                        setIsHovering(true);
+                    } else {
+                        setIsHovering(false);
+                    }
+                };
+
+                window.addEventListener('mousemove', updateMousePosition);
+                window.addEventListener('mouseover', handleMouseOver);
+
+                return () => {
+                    window.removeEventListener('mousemove', updateMousePosition);
+                    window.removeEventListener('mouseover', handleMouseOver);
+                };
+            }, []);
+
+            return (
+                <motion.div
+                    className="fixed top-0 left-0 z-[100] pointer-events-none mix-blend-difference hidden md:block" // Hidden on mobile for performance & usability
+                    animate={{
+                        x: mousePosition.x - (isHovering ? 20 : 10),
+                        y: mousePosition.y - (isHovering ? 20 : 10),
+                        scale: isHovering ? 1.5 : 1,
+                    }}
+                    transition={{ type: "spring", stiffness: 500, damping: 28 }}
+                >
+                    <div 
+                        className={`rounded-full border-2 border-neon ${isHovering ? 'bg-neon/20' : 'bg-transparent'}`}
+                        style={{ width: isHovering ? 40 : 20, height: isHovering ? 40 : 20 }}
+                    />
+                </motion.div>
+            );
+        };
+
+        // --- Components ---
+
+        const RevealText = ({ children, className, delay = 0 }) => {
+            return (
+                <div className="overflow-hidden w-full">
+                    <motion.div
+                        initial={{ y: "100%" }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay }}
+                        viewport={{ once: true }}
+                        className={className}
+                    >
+                        {children}
+                    </motion.div>
+                </div>
+            );
+        };
+
+        // Cinematic Text Reveal Component
+        const CinematicText = ({ text, className, delay = 0 }) => {
+            const words = text.split(" ");
+            
+            const container = {
+                hidden: { opacity: 0 },
+                visible: {
+                    opacity: 1,
+                    transition: { staggerChildren: 0.08, delayChildren: delay }
+                }
+            };
+
+            const child = {
+                hidden: {
+                    opacity: 0,
+                    y: 20,
+                    filter: "blur(10px)",
+                },
+                visible: {
+                    opacity: 1,
+                    y: 0,
+                    filter: "blur(0px)",
+                    transition: {
+                        type: "spring",
+                        damping: 20,
+                        stiffness: 100
+                    }
+                }
+            };
+
+            return (
+                <motion.div 
+                    className={`flex flex-wrap justify-center ${className}`}
+                    variants={container}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    {words.map((word, index) => (
+                        <motion.span 
+                            key={index} 
+                            variants={child}
+                            className="mr-[0.3em] last:mr-0 inline-block"
+                        >
+                            {word}
+                        </motion.span>
+                    ))}
+                </motion.div>
+            );
+        };
+
+        // Glitch Text Component
+        const GlitchText = ({ text, className, delay = 0 }) => {
+            const [show, setShow] = useState(false);
+
+            useEffect(() => {
+                const timer = setTimeout(() => {
+                    setShow(true);
+                }, delay * 1000);
+                return () => clearTimeout(timer);
+            }, [delay]);
+
+            if (!show) return <div className={`${className} opacity-0`}>{text}</div>;
+
+            return (
+                <div className={`${className} snap-reveal`}>
+                    <div className="glitch-wrapper">
+                        <h1 className="glitch" data-text={text}>
+                            {text}
+                        </h1>
+                    </div>
+                </div>
+            );
+        };
+
+        // Ambient Dust Background
+        const AmbientDust = () => {
+            const canvasRef = useRef(null);
+            const mouseRef = useRef({ x: null, y: null, radius: 150 });
+
+            useEffect(() => {
+                const canvas = canvasRef.current;
+                const ctx = canvas.getContext('2d');
+                let width = window.innerWidth;
+                let height = window.innerHeight;
+                let particles = [];
+                let animationFrameId;
+
+                const handleMouseMove = (e) => {
+                    mouseRef.current.x = e.clientX;
+                    mouseRef.current.y = e.clientY;
+                };
+
+                const init = () => {
+                    width = window.innerWidth;
+                    height = window.innerHeight;
+                    canvas.width = width;
+                    canvas.height = height;
+                    particles = [];
+                    
+                    const particleCount = width < 768 ? 60 : 180; 
+                    for (let i = 0; i < particleCount; i++) {
+                        particles.push({
+                            x: Math.random() * width,
+                            y: Math.random() * height,
+                            size: Math.random() * 2.5 + 0.5, 
+                            speedY: Math.random() * 0.4 + 0.1, 
+                            speedX: (Math.random() - 0.5) * 0.5, 
+                            density: (Math.random() * 20) + 1, 
+                            opacity: Math.random() * 0.5 + 0.1,
+                            baseOpacity: Math.random() * 0.5 + 0.1,
+                            angle: Math.random() * Math.PI * 2,
+                            velocity: Math.random() * 0.02 + 0.01 
+                        });
+                    }
+                };
+
+                const draw = () => {
+                    ctx.clearRect(0, 0, width, height);
+                    
+                    particles.forEach(p => {
+                        p.angle += p.velocity;
+                        const sway = Math.sin(p.angle) * 0.3;
+                        const twinkle = Math.sin(p.angle * 2) * 0.1; 
+                        
+                        if (mouseRef.current.x != null) {
+                            let dx = mouseRef.current.x - p.x;
+                            let dy = mouseRef.current.y - p.y;
+                            let distance = Math.sqrt(dx * dx + dy * dy);
+                            
+                            if (distance < mouseRef.current.radius) {
+                                const forceDirectionX = dx / distance;
+                                const forceDirectionY = dy / distance;
+                                const force = (mouseRef.current.radius - distance) / mouseRef.current.radius;
+                                const directionX = forceDirectionX * force * p.density * 0.6; 
+                                const directionY = forceDirectionY * force * p.density * 0.6;
+
+                                p.x -= directionX;
+                                p.y -= directionY;
+                            }
+                        }
+
+                        p.y -= p.speedY;
+                        p.x += p.speedX + sway;
+
+                        ctx.fillStyle = `rgba(255, 255, 255, ${Math.max(0, Math.min(0.8, p.baseOpacity + twinkle))})`;
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                        ctx.fill();
+
+                        if (p.y < -10) {
+                            p.y = height + 10;
+                            p.x = Math.random() * width;
+                        }
+                        if (p.x < -10) p.x = width + 10;
+                        if (p.x > width + 10) p.x = -10;
+                    });
+
+                    animationFrameId = requestAnimationFrame(draw);
+                };
+
+                init();
+                draw();
+                window.addEventListener('resize', init);
+                window.addEventListener('mousemove', handleMouseMove);
+
+                return () => {
+                    window.removeEventListener('resize', init);
+                    window.removeEventListener('mousemove', handleMouseMove);
+                    cancelAnimationFrame(animationFrameId);
+                };
+            }, []);
+
+            return (
+                <canvas 
+                    ref={canvasRef} 
+                    className="absolute inset-0 z-0 mix-blend-screen pointer-events-none"
+                    style={{ opacity: 0.8 }} 
+                />
+            );
+        };
+
+        // Refined Digital Wave Background (Increased Visibility)
+        const DigitalWave = () => {
+            const canvasRef = useRef(null);
+
+            useEffect(() => {
+                const canvas = canvasRef.current;
+                const ctx = canvas.getContext('2d');
+                let width = window.innerWidth;
+                let height = window.innerHeight;
+                let animationFrameId;
+                let time = 0;
+
+                const resize = () => {
+                    width = window.innerWidth;
+                    height = window.innerHeight;
+                    canvas.width = width;
+                    canvas.height = height;
+                };
+
+                const draw = () => {
+                    ctx.clearRect(0, 0, width, height);
+                    time += 0.008;
+
+                    // Increased opacity and brightness for better visibility
+                    const waves = [
+                        { amplitude: 80, frequency: 0.002, speed: 0.03, offset: 0, color: 'rgba(0, 255, 65, 0.3)' }, // Brighter Neon
+                        { amplitude: 50, frequency: 0.004, speed: 0.02, offset: 100, color: 'rgba(0, 255, 65, 0.15)' },
+                        { amplitude: 100, frequency: 0.001, speed: 0.01, offset: -50, color: 'rgba(255, 255, 255, 0.1)' }
+                    ];
+
+                    waves.forEach((wave, index) => {
+                        ctx.beginPath();
+                        ctx.strokeStyle = wave.color;
+                        ctx.lineWidth = 1.5;
+
+                        for (let x = 0; x <= width; x += 5) {
+                            const y = height / 2 + 
+                                      Math.sin(x * wave.frequency + time * wave.speed + wave.offset) * wave.amplitude +
+                                      Math.sin(x * 0.01 + time) * 20; 
+
+                            if (x === 0) ctx.moveTo(x, y);
+                            else ctx.lineTo(x, y);
+                        }
+                        ctx.stroke();
+                    });
+                    
+                    animationFrameId = requestAnimationFrame(draw);
+                };
+
+                window.addEventListener('resize', resize);
+                resize();
+                draw();
+
+                return () => {
+                    window.removeEventListener('resize', resize);
+                    cancelAnimationFrame(animationFrameId);
+                };
+            }, []);
+
+            return (
+                <canvas 
+                    ref={canvasRef} 
+                    className="absolute inset-0 w-full h-full pointer-events-none mix-blend-screen z-0"
+                />
+            );
+        };
+
+        const Navbar = () => {
+            return (
+                <nav className="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center mix-blend-difference">
+                    <motion.div 
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <a href="#" className="font-syne font-extrabold text-xl md:text-2xl tracking-tight text-white hover:text-neon transition-colors duration-300 whitespace-nowrap">
+                            MotiveWorks
+                        </a>
+                    </motion.div>
+                    <motion.div 
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.1 }}
+                        className="hidden md:flex gap-8 font-syne text-xs uppercase tracking-widest font-medium"
+                    >
+                        {['Philosophy', 'Process', 'Contact'].map((item) => (
+                            <a key={item} href={`#${item.toLowerCase()}`} className="text-white hover:text-neon transition-colors duration-300 relative group">
+                                {item}
+                                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-neon transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        ))}
+                    </motion.div>
+                </nav>
+            );
+        };
+
+        const Hero = () => {
+            const { scrollY } = useScroll();
+            const indicatorOpacity = useTransform(scrollY, [0, 50], [1, 0]);
+
+            return (
+                <section className="h-screen w-full flex flex-col justify-center items-center relative px-4 md:px-12 overflow-hidden">
+                    <div className="absolute inset-0 bg-radial-gradient from-transparent to-black opacity-80 pointer-events-none"></div>
+
+                    <div className="flex flex-col items-center text-center z-10 max-w-6xl relative">
+                        {/* Subtitle: Cinematic Reveal */}
+                        <div className="mb-6 md:mb-8 h-8 md:h-12 flex items-center justify-center">
+                            <CinematicText 
+                                text="We don't make mediocre merch."
+                                className="font-syne font-bold text-[4vw] md:text-[2vw] leading-none tracking-tighter text-gray-400 mix-blend-screen uppercase"
+                                delay={0.5}
+                            />
+                        </div>
+                        
+                        {/* Main Title: Glitch Snap Effect */}
+                        <div className="relative flex flex-col items-center w-full">
+                            {/* Reduced font size for mobile (9vw -> 8vw) to eliminate truncation */}
+                            <GlitchText 
+                                text="WE CRAFT"
+                                className="font-syne font-extrabold text-[8vw] md:text-[7.5vw] leading-[0.85] tracking-tighter text-white mix-blend-screen whitespace-nowrap"
+                                delay={1.5}
+                            />
+                            <GlitchText 
+                                text="YOUR MOTIVE"
+                                className="font-syne font-extrabold text-[8vw] md:text-[7.5vw] leading-[0.85] tracking-tighter text-white mix-blend-screen whitespace-nowrap"
+                                delay={1.7}
+                            />
+                            {/* Optional Glow */}
+                            <div className="absolute inset-0 bg-neon/20 blur-[100px] -z-10 opacity-40"></div>
+                        </div>
+                    </div>
+                    
+                    <motion.div 
+                        animate={{ opacity: [0.05, 0.12, 0.05] }}
+                        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] bg-neon/10 blur-[100px] rounded-full pointer-events-none"
+                    ></motion.div>
+
+                    {/* NEW: Mobile-only Scroll Indicator with Scroll Fade-Out */}
+                    <motion.div 
+                        style={{ opacity: indicatorOpacity }}
+                        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2 md:hidden pointer-events-none"
+                    >
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 2.5, duration: 1 }}
+                        >
+                            <motion.div 
+                                animate={{ y: [0, 8, 0] }}
+                                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                                className="text-neon opacity-60"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                                </svg>
+                            </motion.div>
+                        </motion.div>
+                    </motion.div>
+
+                    {/* Smooth Transition Gradient */}
+                    <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black/80 z-20 pointer-events-none"></div>
+                </section>
+            );
+        };
+
+        // NEW: "The Dual Realm" Philosophy Section (Redesigned)
+        const Philosophy = () => {
+            return (
+                <section id="philosophy" className="flex flex-col relative">
+                    
+                    {/* The Split Container */}
+                    <div className="flex flex-col md:flex-row w-full relative">
+                        
+                        {/* Left: The Fading World (Transient) - Mobile Optimized (h-auto + padding) */}
+                        <div className="w-full md:w-1/2 min-h-[35vh] md:min-h-[50vh] relative flex items-center justify-center md:justify-end p-6 py-12 md:p-24 border-b md:border-b-0 md:border-r border-white/10 overflow-hidden group">
+                            {/* Background overlay for dust visibility */}
+                            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-dark/80 to-black/80 pointer-events-none"></div>
+                            
+                            {/* Noise Texture for Gritty Feel */}
+                            <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
+                                 style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}>
+                            </div>
+                            
+                            {/* Text with Fading Effect - Increased Visibility */}
+                            <div className="text-center md:text-right opacity-100 group-hover:opacity-50 transition-all duration-700 flex flex-col gap-2 relative z-20">
+                                <motion.h3 
+                                    initial={{ y: 20, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: 1 }}
+                                    className="font-serif italic text-3xl md:text-5xl lg:text-6xl text-gray-300"
+                                >
+                                    Markets change.
+                                </motion.h3>
+                                <motion.h3 
+                                    initial={{ y: 20, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: 1, delay: 0.2 }}
+                                    className="font-serif italic text-3xl md:text-5xl lg:text-6xl text-gray-400"
+                                >
+                                    Trends fade.
+                                </motion.h3>
+                            </div>
+                        </div>
+
+                        {/* Mobile Divider Line (Visible only on mobile to maintain symmetry feel) */}
+                        <div className="w-full h-[1px] bg-gradient-to-r from-gray-800 via-neon to-gray-800 md:hidden shadow-[0_0_10px_#00ff41]"></div>
+
+                        {/* Right: The Timeless Core (Permanent) - Mobile Optimized (h-auto + padding) */}
+                        <div className="w-full md:w-1/2 min-h-[35vh] md:min-h-[50vh] relative flex flex-col items-center md:items-start justify-center md:justify-center p-6 py-12 md:p-24 group overflow-hidden">
+                            {/* Background overlay */}
+                            <div className="absolute inset-0 bg-black/90 pointer-events-none"></div>
+
+                            <div className="text-center md:text-left z-20 relative">
+                                <motion.h3 
+                                    initial={{ y: 20, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: 1, delay: 0.4 }}
+                                    className="font-syne font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-2 tracking-tight"
+                                >
+                                    BUT YOUR STORY
+                                </motion.h3>
+                                <motion.h3 
+                                    initial={{ y: 20, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: 1, delay: 0.6 }}
+                                    className="font-syne font-bold text-4xl md:text-6xl lg:text-7xl text-neon tracking-tight"
+                                >
+                                    REMAINS.
+                                </motion.h3>
+                            </div>
+                            
+                            {/* Subtle Glow on Right Side */}
+                            <div className="absolute inset-0 bg-neon/5 blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-10"></div>
+                        </div>
+
+                        {/* Center Axis Line (Desktop only) */}
+                        <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-[1px] bg-gradient-to-b from-gray-800 via-neon to-gray-800 hidden md:block shadow-[0_0_10px_#00ff41] z-30"></div>
+                    </div>
+
+                    {/* Bottom: The Synthesis / Conclusion - Removed Mobile Border */}
+                    <div className="w-full py-16 md:py-20 px-6 flex justify-center items-center border-t-0 relative z-10">
+                         <motion.p 
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            className="text-gray-400 font-syne font-medium text-lg md:text-xl text-center max-w-2xl leading-relaxed"
+                        >
+                            We discover your core <span className="text-white font-bold">MOTIVE</span>,<br/>
+                            and transform it into timeless <span className="text-white font-bold">WORKS</span>.
+                        </motion.p>
+                    </div>
+                </section>
+            );
+        };
+
+        // Restored Compact Step Component with Border Control
+        const CompactStep = ({ number, title, subtitle, desc, isFirst = false }) => {
+            return (
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ margin: "-50px", once: true }}
+                    // Reduced vertical padding from py-8 to py-5 for tighter spacing on mobile
+                    className={`${isFirst ? 'border-t-0' : 'border-t border-gray-800'} hover:border-neon transition-colors duration-300 py-5 md:py-8 px-2 group`}
+                >
+                    <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-baseline">
+                        {/* Col 1: Number */}
+                        <div className="md:col-span-1">
+                            <span className="font-syne font-bold text-lg text-neon/60 group-hover:text-neon transition-colors">{number}</span>
+                        </div>
+
+                        {/* Col 2: Title & Subtitle */}
+                        <div className="md:col-span-4">
+                            <h3 className="font-syne font-bold text-2xl md:text-3xl text-white mb-1 group-hover:translate-x-2 transition-transform duration-300">{title}</h3>
+                            <p className="font-syne font-medium text-neon text-xs tracking-widest uppercase opacity-80">{subtitle}</p>
+                        </div>
+
+                        {/* Col 3: Description */}
+                        <div className="md:col-span-7">
+                            <p className="font-sans text-gray-400 text-sm md:text-base leading-relaxed group-hover:text-gray-300 transition-colors max-w-2xl">
+                                {desc}
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+            );
+        };
+
+        const Process = () => {
+            return (
+                // Reduced section padding from py-12 to py-8 for mobile
+                <section id="process" className="py-8 md:py-32 px-6 md:px-12 relative overflow-hidden">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16">
+                            {/* Sticky Title Area - Gap further reduced */}
+                            <div className="lg:col-span-3 lg:sticky lg:top-32 h-fit mb-2 lg:mb-0">
+                                <RevealText className="font-syne font-bold text-neon text-sm tracking-[0.3em] mb-2 uppercase">
+                                    The Process
+                                </RevealText>
+                                <h2 className="font-syne font-bold text-5xl md:text-6xl text-white tracking-tight leading-none">
+                                    HOW WE<br/>IGNITE
+                                </h2>
+                                {/* Intro text removed as requested */}
+                                <div className="w-[2px] h-20 bg-neon mt-6 hidden lg:block ml-1 opacity-50"></div>
+                            </div>
+
+                            {/* Efficient Compact List - Restored Structure, Removed border-b as requested */}
+                            <div className="lg:col-span-9 flex flex-col">
+                                <CompactStep 
+                                    number="01" 
+                                    title="DISCOVER" 
+                                    subtitle="Narrative Pillars" 
+                                    desc="당신의 파편화된 영감을 하나의 거대한 서사로 구조화합니다."
+                                    isFirst={true}
+                                />
+                                <CompactStep 
+                                    number="02" 
+                                    title="DESIGN" 
+                                    subtitle="Visual Identity" 
+                                    desc="당신의 무드를 건드리는 과감하고 독창적인 비주얼을 설계합니다."
+                                />
+                                <CompactStep 
+                                    number="03" 
+                                    title="CRAFT" 
+                                    subtitle="Masterpiece Only" 
+                                    desc="명품 브랜드 수준의 마감과 디테일을 고집합니다."
+                                />
+                                <CompactStep 
+                                    number="04" 
+                                    title="LAUNCH" 
+                                    subtitle="D2C Ownership" 
+                                    desc="플랫폼에 종속되지 않는 당신만의 독립 스토어. 팬들과 직접 연결되는 통로를 엽니다."
+                                />
+                                <CompactStep 
+                                    number="05" 
+                                    title="AMPLIFY" 
+                                    subtitle="Cultural Impact" 
+                                    desc="단순 판매를 넘어선 문화적 현상으로. 데이터 기반으로 팬덤을 확장하고 브랜드를 키웁니다."
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // NEW: Plasma Effect Background for Text Mask
+        const PlasmaBackground = () => {
+            const canvasRef = useRef(null);
+
+            useEffect(() => {
+                const canvas = canvasRef.current;
+                const ctx = canvas.getContext('2d');
+                let width, height;
+                let time = 0;
+
+                const resize = () => {
+                    if(canvas) {
+                        width = canvas.width = canvas.offsetWidth;
+                        height = canvas.height = canvas.offsetHeight;
+                    }
+                };
+
+                const draw = () => {
+                    time += 0.01;
+                    const cx = width / 2;
+                    const cy = height / 2;
+                    
+                    // Create gradients for plasma effect
+                    const grd1 = ctx.createRadialGradient(cx + Math.sin(time) * width * 0.3, cy + Math.cos(time) * height * 0.3, 0, cx, cy, width * 0.8);
+                    grd1.addColorStop(0, '#00ff41'); 
+                    grd1.addColorStop(1, 'transparent');
+
+                    const grd2 = ctx.createRadialGradient(cx + Math.cos(time * 0.8) * width * 0.4, cy + Math.sin(time * 0.7) * height * 0.4, 0, cx, cy, width * 0.6);
+                    grd2.addColorStop(0, '#ffffff');
+                    grd2.addColorStop(1, 'transparent');
+
+                    ctx.fillStyle = '#000';
+                    ctx.fillRect(0, 0, width, height);
+                    
+                    ctx.globalCompositeOperation = 'screen';
+                    ctx.fillStyle = grd1;
+                    ctx.fillRect(0, 0, width, height);
+                    ctx.fillStyle = grd2;
+                    ctx.fillRect(0, 0, width, height);
+                    ctx.globalCompositeOperation = 'source-over';
+
+                    requestAnimationFrame(draw);
+                };
+
+                resize();
+                window.addEventListener('resize', resize);
+                const animId = requestAnimationFrame(draw);
+
+                return () => {
+                    window.removeEventListener('resize', resize);
+                    cancelAnimationFrame(animId);
+                };
+            }, []);
+
+            return <canvas ref={canvasRef} className="w-full h-full" />;
+        };
+
+        // NEW: Infinite Marquee Component (Stable)
+        const InfiniteMarquee = ({ text }) => {
+            return (
+                <div className="relative flex overflow-hidden py-3 bg-neon group cursor-pointer border-y-4 border-black">
+                    <a href="mailto:hello@motiveworks.kr" className="absolute inset-0 z-20"></a>
+                    <motion.div
+                        className="whitespace-nowrap flex gap-12 items-center"
+                        animate={{ x: ["0%", "-50%"] }}
+                        transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+                    >
+                        {[...Array(10)].map((_, i) => (
+                            <span key={i} className="font-syne font-extrabold text-2xl md:text-4xl text-black uppercase tracking-tight group-hover:text-white transition-colors duration-300">
+                                {text}
+                            </span>
+                        ))}
+                    </motion.div>
+                </div>
+            );
+        };
+
+        const CTA = () => {
+            return (
+                <section id="contact" className="min-h-[80vh] md:min-h-screen flex flex-col justify-center items-center relative overflow-hidden">
+                    {/* Center Content - Grand Finale */}
+                    <div className="flex flex-col items-center justify-center px-6 z-10 relative mb-20 w-full">
+                        <RevealText className="font-syne font-bold text-gray-500 text-lg md:text-2xl tracking-[0.3em] md:tracking-[0.5em] mb-2 text-center w-full">
+                            READY TO CRAFT YOUR
+                        </RevealText>
+                        
+                        {/* Massive Interactive Title with Aurora Effect */}
+                        <div className="relative group cursor-default text-center w-full">
+                            {/* Optimized font size for mobile: 11.5vw (further reduced from 12.5vw to ensure fit) */}
+                            <h2 className="font-syne font-extrabold text-[11.5vw] md:text-[12.5vw] leading-[0.85] tracking-tighter aurora-text relative z-10 break-all md:break-normal">
+                                MOTIVE?
+                            </h2>
+                            
+                            {/* Glow Effect */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-neon/20 blur-[120px] rounded-full opacity-30 group-hover:opacity-60 transition-opacity duration-500 pointer-events-none -z-10"></div>
+                        </div>
+                        
+                        <p className="mt-12 font-syne font-medium text-white/40 text-sm md:text-base max-w-md text-center leading-relaxed tracking-wider">
+                            LET'S BUILD YOUR LEGACY TOGETHER.
+                        </p>
+                    </div>
+
+                    {/* Diagonal Marquee Button - Removed hover rotation */}
+                    <div className="absolute bottom-20 md:bottom-12 w-[120%] -rotate-3 shadow-[0_0_50px_rgba(0,255,65,0.2)] z-30">
+                        <InfiniteMarquee text="HELLO@MOTIVEWORKS.KR" />
+                    </div>
+                    
+                    <style>{`
+                        .aurora-text {
+                            background: linear-gradient(45deg, #00ff41, #ffffff, #00ffff, #00ff41);
+                            background-size: 300% 300%;
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            color: transparent;
+                            animation: aurora 4s ease infinite;
+                        }
+                        
+                        @keyframes aurora {
+                            0% { background-position: 0% 50%; }
+                            50% { background-position: 100% 50%; }
+                            100% { background-position: 0% 50%; }
+                        }
+                    `}</style>
+                </section>
+            );
+        };
+
+        const Footer = () => {
+            return (
+                <footer className="py-12 px-6 md:px-12 border-t border-gray-900 relative z-20">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div className="text-center md:text-left">
+                            {/* Logo: Bold 800 (ExtraBold) */}
+                            <h2 className="font-syne font-extrabold text-xl text-white mb-1">MotiveWorks</h2>
+                            <p className="font-sans text-gray-600 text-xs">© 2025 All rights reserved.</p>
+                        </div>
+                        
+                        <div className="flex gap-8 font-syne text-xs font-bold uppercase tracking-widest">
+                            <a href="https://www.instagram.com/_motiveworks/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">Instagram</a>
+                        </div>
+                    </div>
+                </footer>
+            );
+        };
+
+        const App = () => {
+            return (
+                <div className="bg-black min-h-screen relative">
+                    <CustomCursor />
+                    {/* Global Dust Background - Fixed */}
+                    <div className="fixed inset-0 z-0 pointer-events-none">
+                        <AmbientDust />
+                    </div>
+
+                    <Navbar />
+                    
+                    {/* Content relative z-10 to sit above dust */}
+                    <main className="relative z-10">
+                        <Hero />
+                        <Philosophy />
+                        <Process />
+                        <CTA />
+                    </main>
+                    <div className="relative z-10">
+                        <Footer />
+                    </div>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
